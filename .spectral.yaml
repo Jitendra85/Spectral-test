@@ -1,4 +1,3 @@
-extends: spectral:oas
 rules:
   oas3-api-costcenter:
     description: There must be x-cost-center.
