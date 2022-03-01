@@ -1,0 +1,17 @@
+extends: spectral:oas
+rules:
+  oas3-api-costcenter:
+    description: There must be x-cost-center.
+    given: $
+    severity: error
+    then:
+      field: x-cost-center
+      function: truthy
+
+  oas3-api-businessid:
+    description: There must be x-business-id.
+    given: $
+    severity: error
+    then:
+      field: x-business-id
+      function: truthy
